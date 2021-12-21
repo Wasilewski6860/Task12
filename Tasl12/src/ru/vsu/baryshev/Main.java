@@ -11,7 +11,7 @@ public class Main {
 
 
 
-    static void logic(int arr[], int answer[], int start, int end, int index, int k) {
+    static void logic(int[] arr, int[] answer, int start, int end, int index, int k) {
 
         if (index == k) {
 
@@ -33,14 +33,14 @@ public class Main {
 
     static void solution(int arr[], int k) {
 
-        int answer[] = new int[k];
+        int[] answer = new int[k];
 
         logic(arr, answer, 0, arr.length - 1, 0, k);
     }
 
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5};
+        int[] arr = {1, 2, 3, 4, 5};
         int k = 3;
         solution(arr, k);
 
